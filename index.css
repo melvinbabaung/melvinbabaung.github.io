@@ -1,0 +1,541 @@
+                                                    body {
+                                                        margin: 0;
+                                                    }
+                                                    
+                                                    ul.topnav {
+                                                        list-style-type: none;
+                                                        margin: 0px;
+                                                        padding: 0px;
+                                                        overflow: hidden;
+                                                        background-color: rgba(236, 234, 234, 0);
+                                                    }
+                                                    
+                                                    .dafter {
+                                                        background-color: #0e4ca8;
+                                                        color: white;
+                                                        border-radius: 10px;
+                                                        border-color: #0e4ca8;
+                                                    }
+                                                    
+                                                    ul.topnav li {
+                                                        float: right;
+                                                    }
+                                                    
+                                                    ul.topnav li a {
+                                                        display: block;
+                                                        color: rgb(21, 21, 21);
+                                                        text-align: center;
+                                                        padding: 10px 36px;
+                                                        text-decoration: none;
+                                                    }
+                                                    
+                                                    ul.topnav li a:hover:not(.active) {
+                                                        background-color: rgba(252, 241, 241, 0.115);
+                                                    }
+                                                    
+                                                    ul.topnav li a.active {}
+                                                    
+                                                    ul.topnav li.left {
+                                                        float: left;
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 600px) {
+                                                        ul.topnav li.right,
+                                                        ul.topnav li {
+                                                            float: none;
+                                                        }
+                                                    }
+                                                    
+                                                    ul {
+                                                        list-style-type: none;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        overflow: hidden;
+                                                        background-color: rgba(104, 96, 98, 0.819);
+                                                        position: -webkit-sticky;
+                                                        /* Safari */
+                                                        position: sticky;
+                                                        top: 0;
+                                                    }
+                                                    /*                                                     
+                                                    .dropbtn {
+                                                        background-color: #4CAF50;
+                                                        color: rgb(143, 26, 26);
+                                                        padding: 16px;
+                                                        font-size: 16px;
+                                                        border: none;
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    .dropdown {
+                                                        position: relative;
+                                                        display: inline-block;
+                                                    }
+                                                    
+                                                    .dropdown-content {
+                                                        display: none;
+                                                        position: absolute;
+                                                        background-color: #f9f9f9;
+                                                        min-width: 160px;
+                                                        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                                                        z-index: 1;
+                                                    }
+                                                    
+                                                    .dropdown-content a {
+                                                        color: black;
+                                                        padding: 12px 16px;
+                                                        text-decoration: none;
+                                                        display: block;
+                                                    }
+                                                    
+                                                    .dropdown-content a:hover {
+                                                        background-color: #f1f1f1
+                                                    }
+                                                    
+                                                    .dropdown:hover .dropdown-content {
+                                                        display: block;
+                                                    }
+                                                    
+                                                    .dropdown:hover .dropbtn {
+                                                        background-color: #3e8e41;
+                                                    }
+                                                     */
+                                                    
+                                                    li {
+                                                        float: right;
+                                                    }
+                                                    
+                                                    .one {
+                                                        float: left;
+                                                        padding-right: 30px;
+                                                    }
+                                                    
+                                                    li a {
+                                                        display: block;
+                                                        color: white;
+                                                        text-align: center;
+                                                        padding: 14px 16px;
+                                                        text-decoration: none;
+                                                    }
+                                                    
+                                                    li a:hover {
+                                                        background-color: rgba(119, 111, 111, 0);
+                                                    }
+                                                    
+                                                    .active {}
+                                                    
+                                                    .blue {
+                                                        border: solid blue;
+                                                        background-color: blue;
+                                                        height: 300px;
+                                                    }
+                                                    
+                                                    @keyframes slider {
+                                                        0% {
+                                                            right: 0;
+                                                        }
+                                                        20% {
+                                                            right: 0;
+                                                        }
+                                                        25% {
+                                                            right: -10%;
+                                                        }
+                                                        45% {
+                                                            right: -10%;
+                                                        }
+                                                        50% {
+                                                            right: -20%;
+                                                        }
+                                                        70% {
+                                                            right: -20%;
+                                                        }
+                                                        75% {
+                                                            right: -30%;
+                                                        }
+                                                        95% {
+                                                            right: -30%;
+                                                        }
+                                                        100% {
+                                                            right: -40%;
+                                                        }
+                                                    }
+                                                    
+                                                    #slider {
+                                                        overflow: hidden;
+                                                    }
+                                                    
+                                                    .border {
+                                                        padding-left: 10px;
+                                                        padding-top: 1px;
+                                                        padding-bottom: 20px;
+                                                    }
+                                                    
+                                                    #slider figure img {
+                                                        border: solid rgba(255, 255, 255, 0);
+                                                        border-radius: 10px;
+                                                        margin-left: 10px;
+                                                    }
+                                                    
+                                                    #slider figure {
+                                                        position: relative;
+                                                        width: 100%;
+                                                        margin: 0;
+                                                        right: 0;
+                                                        text-align: right;
+                                                        font-size: 0;
+                                                        animation: 15s slider infinite;
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .biru {
+                                                        border: solid;
+                                                        padding-left: 20%;
+                                                        border-radius: 10px;
+                                                    }
+                                                    
+                                                    .tiket {
+                                                        background-color: rgb(186, 186, 186);
+                                                        width: 200px;
+                                                        height: 300px;
+                                                        border: 1px solid black;
+                                                        overflow: auto;
+                                                        border-radius: 10px;
+                                                    }
+                                                    
+                                                    .gabungan {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .radio {
+                                                        display: flex;
+                                                        margin-left: 50px;
+                                                        padding-left: 50px;
+                                                    }
+                                                    
+                                                    .radio1 {
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .text {
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .gift {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                    }
+                                                    
+                                                    .rejeki {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                    }
+                                                    
+                                                    .gal {
+                                                        margin: 20px;
+                                                        margin-top: 50px;
+                                                        padding: 10px;
+                                                    }
+                                                    
+                                                    .a {
+                                                        text-decoration-line: none;
+                                                        background-color: rgb(224, 225, 224);
+                                                        color: #0e4ca8;
+                                                        padding: 10px;
+                                                        border-radius: 10px;
+                                                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                                    }
+                                                    
+                                                    .a:hover {
+                                                        background-color: rgb(36, 41, 203);
+                                                        color: #ffffff;
+                                                    }
+                                                    
+                                                    .a:active {
+                                                        background-color: rgb(54, 89, 242);
+                                                    }
+                                                    
+                                                    .jakarta {
+                                                        display: flex;
+                                                        margin: 20px;
+                                                    }
+                                                    
+                                                    .jakarta1 {
+                                                        height: 250px;
+                                                        width: 150px;
+                                                        border-radius: 10px;
+                                                    }
+                                                    
+                                                    .jelajahi {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                    }
+                                                    
+                                                    .destinasi {
+                                                        float: left;
+                                                        margin: 5px;
+                                                    }
+                                                    
+                                                    .c {
+                                                        height: 100px;
+                                                        width: 100px;
+                                                        border-radius: 10px;
+                                                    }
+                                                    
+                                                    .khusus {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                        text-align: center;
+                                                    }
+                                                    
+                                                    .divdiv {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                    }
+                                                    
+                                                    .flight {
+                                                        list-style-type: none;
+                                                        display: block;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        overflow: hidden;
+                                                        background-color: #333;
+                                                    }
+                                                    
+                                                    .classli {
+                                                        float: left;
+                                                    }
+                                                    
+                                                    .classli a {
+                                                        display: block;
+                                                        color: white;
+                                                        text-align: center;
+                                                        padding: 14px 16px;
+                                                        text-decoration: none;
+                                                    }
+                                                    
+                                                    .classli a:hover:not(.active) {
+                                                        background-color: #111;
+                                                    }
+                                                    
+                                                    .active {
+                                                        background-color: #84d8b9;
+                                                    }
+                                                    
+                                                    .maskapai {
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .mas {
+                                                        background-color: rgba(224, 223, 222, 0);
+                                                        width: 200px;
+                                                        height: 300px;
+                                                        border: 1px solid rgba(255, 255, 255, 0);
+                                                        overflow: auto;
+                                                        border-radius: 10px;
+                                                        margin-left: 250px;
+                                                    }
+                                                    
+                                                    .divdivv {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                    }
+                                                    
+                                                    .flightt {
+                                                        list-style-type: none;
+                                                        display: block;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        overflow: hidden;
+                                                        background-color: #333;
+                                                    }
+                                                    
+                                                    .classlii {
+                                                        float: left;
+                                                    }
+                                                    
+                                                    .classlii a {
+                                                        display: block;
+                                                        color: white;
+                                                        text-align: center;
+                                                        padding: 14px 16px;
+                                                        text-decoration: none;
+                                                    }
+                                                    
+                                                    .tta {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                        padding right: 15px;
+                                                    }
+                                                    
+                                                    footer {
+                                                        border: solid;
+                                                        border-color: #111;
+                                                        background-color: #111;
+                                                        height: 600px;
+                                                    }
+                                                    
+                                                    * {
+                                                        box-sizing: border-box;
+                                                    }
+                                                    
+                                                    .box {
+                                                        float: left;
+                                                        width: 28.33%;
+                                                        padding: 50px;
+                                                        margin-leftt: px;
+                                                    }
+                                                    
+                                                    .clearfix::after {
+                                                        content: "";
+                                                        clear: both;
+                                                        display: table;
+                                                    }
+                                                    
+                                                    .box1 {
+                                                        margin-right: 1px;
+                                                        float: left;
+                                                        width: 18.33%;
+                                                        padding: 50px;
+                                                        margin-left: 150px;
+                                                    }
+                                                    
+                                                    .box3 {
+                                                        margin-right: 1px;
+                                                        float: right;
+                                                        width: 16.33%;
+                                                        padding: 50px;
+                                                        margin-right: 300px;
+                                                    }
+                                                    
+                                                    .foo {
+                                                        border: solid;
+                                                        border-color: white;
+                                                        background-color: white;
+                                                        border-radius: 10px;
+                                                    }
+                                                    
+                                                    .classa:link {
+                                                        text-decoration: none;
+                                                        color: rgb(139, 132, 132)
+                                                    }
+                                                    
+                                                    .classa:visited {
+                                                        text-decoration: none;
+                                                    }
+                                                    
+                                                    .classa:hover {
+                                                        text-decoration: underline;
+                                                        color: #ffffff;
+                                                    }
+                                                    
+                                                    .classa:active {
+                                                        text-decoration: underline;
+                                                    }
+                                                    
+                                                    .ccc:link {
+                                                        text-decoration: none;
+                                                        color: #111;
+                                                        font-size: smaller;
+                                                    }
+                                                    
+                                                    .ccc:visited {
+                                                        text-decoration: none;
+                                                    }
+                                                    
+                                                    .ccc:hover {
+                                                        text-decoration: underline;
+                                                    }
+                                                    
+                                                    .ccc:active {
+                                                        text-decoration: underline;
+                                                    }
+                                                    
+                                                    .divdivvv {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                    }
+                                                    
+                                                    .flighttt {
+                                                        list-style-type: none;
+                                                        display: block;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        overflow: hidden;
+                                                        background-color: rgba(1, 0, 0, 0);
+                                                    }
+                                                    
+                                                    .classli {
+                                                        float: left;
+                                                    }
+                                                    
+                                                    .classli a {
+                                                        display: block;
+                                                        color: rgb(4, 3, 3);
+                                                        text-align: center;
+                                                        padding: 14px 16px;
+                                                        text-decoration: none;
+                                                    }
+                                                    
+                                                    .ivdiv {
+                                                        margin-left: 20%;
+                                                        margin-right: 20%;
+                                                    }
+                                                    
+                                                    .light {
+                                                        list-style-type: none;
+                                                        display: block;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        overflow: hidden;
+                                                        background-color: rgba(1, 0, 0, 0);
+                                                    }
+                                                    
+                                                    .lassli {
+                                                        float: left;
+                                                    }
+                                                    
+                                                    .lassli a {
+                                                        display: block;
+                                                        color: rgb(4, 3, 3);
+                                                        text-align: center;
+                                                        padding: 14px 16px;
+                                                        text-decoration: none;
+                                                    }
+                                                    
+                                                    .ba {
+                                                        text-decoration-line: none;
+                                                        background-color: rgb(250, 253, 250);
+                                                        color: blue;
+                                                        padding: 10px;
+                                                        border-radius: 10px;
+                                                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                                    }
+                                                    
+                                                    .ba:hover {
+                                                        background-color: rgb(15, 83, 229);
+                                                        color: white;
+                                                    }
+                                                    
+                                                    .ba:active {
+                                                        background-color: rgb(39, 54, 218);
+                                                    }
+                                                    
+                                                    .abc {
+                                                        text-decoration-line: none;
+                                                        background-color: rgb(250, 253, 250);
+                                                        color: blue;
+                                                        padding: 10px;
+                                                        border-radius: 10px;
+                                                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                                    }
+                                                    
+                                                    .abc:hover {
+                                                        background-color: rgb(15, 83, 229);
+                                                        color: white;
+                                                    }
+                                                    
+                                                    .abc:active {
+                                                        background-color: rgb(39, 54, 218);
+                                                    }
